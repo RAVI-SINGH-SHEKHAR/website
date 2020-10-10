@@ -1,0 +1,411 @@
+
+body{
+    margin: 0px; 
+    padding: 0px; 
+    background-image: url(image.jpg);  
+    background-repeat: no-repeat;
+    height: 100%;
+}
+header{
+    background-color: darkslategray;
+    margin-top: -20px;
+    height: 70px;
+    position: sticky;
+   /* opacity:initial; */
+}
+.right{
+    position: absolute;
+    display: inline-block;
+    right: 30px;
+    top: 20px;
+    /* border: 1px solid black; */
+}
+#frmSearch input{
+    height: 40px;
+    margin-top: -5px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+#frmSearch .search1{
+    color: rgb(0, 0, 0);
+    background-color: rgb(252, 198, 23);
+    font-weight: bold;
+    padding: 10px;
+}
+#frmSearch .search1:hover{
+    color: rgb(255, 255, 254);
+    font-weight: bold;
+    background-color: springgreen;
+}
+.left{
+    position: absolute;
+    display: inline-block;
+    left: 30px;
+    top: 20px;
+    /* border: 1px solid black; */
+}
+.left img{
+    width: 55px;
+    height: 55px;
+    border-radius: 180px;
+    margin-top:-12px;
+}
+.center{
+    display: block;
+    width: 400px;
+    /* margin: auto; */
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    margin-left: 90px;
+}
+.center i{
+    color: white;
+}
+.nav{
+    display: flex;
+    margin-left: -5px;
+    
+}
+.nav li{
+    font-size: 15px;
+    height: 20px;
+    list-style: none;
+    padding-top: -5px;
+}
+.nav li a{
+    text-decoration: none;
+    /* margin-left: -6px; */
+    border-radius: 20px;
+    color: wheat;
+    height: 69px;
+}
+  .nav a:hover{ 
+      background-color: rgb(226, 240, 100); 
+    color: black;
+    font-weight: bold;
+ }  
+ 
+/* -------------------------------------------------- Body content ---------------------------------- */
+.im img{
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 50%;
+    border: none;
+    border-radius: 180px;
+}
+/* --------------------------------------------------- Animation text -------------------------------------- */
+
+.text_1 {
+    animation: text1;
+  }
+  .text_2 {
+    animation: text2;
+  }
+  .text_1, .text_2 {
+    overflow: hidden;
+    margin-left: 250px;
+    width: 50%;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(24, infinite);
+    animation-iteration-count: infinite;
+  }
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(26, infinite);
+  }
+  .text_2{
+      color: rgb(156, 247, 53);
+      
+  }
+  @keyframes text2 {
+    0%, 50%, 100%{
+        width: 0;
+    }
+    60%,90%{
+        width: 13.4em;
+    }
+  }
+  @keyframes text1 {
+    0%, 50%, 100%{
+        width: 0;
+    }
+    10%,40%{
+        width: 11em;
+    }
+  }
+/* --------------------------------------------------- Animation text -------------------------------------- */
+
+/* ---------------------------------------------------- vertical scroll bar -------------------------------- */
+.vertical-menu{
+    margin-top: -50px;
+  }
+  
+  .vertical-menu a {
+    background-color: rgb(16, 248, 237); /* Grey background color */
+    color: black; /* Black text color */
+    display: block; 
+    padding: 10px; 
+    list-style: none;
+   width: 180px;
+    text-decoration: none; /* Remove underline from links */
+  }
+  .vertical-menu i{
+      color: rgb(103, 104, 99);
+  }
+  
+  .vertical-menu a:hover {
+    background-color: rgb(247, 253, 253); /* Dark grey background on mouse-over */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .vertical-menu a.active {
+    background-color: rgb(233, 172, 17); /* Add a green color to the "active/current" link */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  /* .vertical-menu {
+    width: 350px;
+    height: 350px;
+    overflow-y: auto;
+  } */
+/*--------------------------------------------------- vertical scroll bar ------------------------------------------ */
+
+/* ------------------------------------------------------ Surfing menu --------------------------------------------------- */
+
+.surfing {
+    display: block;
+    width: 617.8px;
+    margin: auto;
+   border: 1px solid rgb(16, 248, 237);
+    /* border-radius: 5px; */
+    margin-top: -250px;
+    background-color: rgb(245, 245, 138);
+}
+.mid h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(31, 32, 30);
+    text-align: center;
+    font-weight: bold;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-twitter {
+    background: rgb(13, 134, 226);
+    color: rgb(250, 244, 244);
+  }
+  .fa-facebook {
+    background: rgb(15, 145, 245);
+    color: rgb(248, 245, 245);
+  }
+  .fa-instagram {
+    background: rgb(184, 84, 18);
+    color: rgb(19, 14, 14);
+  }
+  .fa-linkedin {
+    background: #55ACEE;
+    color: rgb(247, 241, 241);
+  }
+  .fa-whatsapp {
+    background:lightgreen;
+    color: white;
+  }
+
+/* ------------------------------------------------------ Surfing menu --------------------------------------------------- */
+
+/* ----------------------------------------------------- learn section------------------------------------------------------------- */
+
+.p1{
+  text-align: left;
+}
+.h2{
+  text-align: center;
+}
+.a{
+  border: 1px solid black;
+  padding: 10px;
+  background-color: rgb(107, 157, 248);
+  text-decoration: none;
+  color: rgb(248, 247, 244);
+}
+ .img2 a:hover{
+  text-decoration: none;
+  font-weight: bold;
+color: rgb(65, 61, 61);
+} 
+.learn{
+  margin:70px;
+  display: flex;
+  margin-left: 250px;
+}
+.img2{
+  border: 2px solid rgb(161, 161, 159);
+  background-color: wheat;
+  width: 350px;  
+  padding: 30px;
+  margin: 3px 6px;
+  border-radius: 20px;
+}
+.img2 img{
+  height: 100px;
+  display: block;
+  margin: auto;
+  border-radius: 1px;
+}
+
+/* ----------------------------------------------------- learn section------------------------------------------------------------- */
+
+/* ------ footer bar---------- */
+.footer{
+  margin-top: -30px;
+  margin-left: 40px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer a:hover{
+  text-decoration: none;
+}
+
+/* ------ footer bar---------- */
+
+/* ----------------- top button ------- */
+.top{
+  float: right;
+  margin-top: -30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.top button{
+  background-color: chocolate;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+/* ----------------- top button ------- */
+
+/* ----------------------- Responsive style ------------------- */
+@media screen and (max-width:1020px)
+{
+
+  /* -------------------------------- Responsive learn menu -------------------- */
+  .learn{
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  .learn .img2 img{
+    margin-left: 80px;
+  }
+  /* -------------------------------- Responsive learn menu -------------------- */
+
+  /* -------------------------------- Responsive surfing menu -------------------- */
+  .surfing{
+    width: 300px;
+    margin-left: 150px;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    margin-top: -80px;
+    flex-direction: column;
+  }
+  .surfing .mid h1{
+    font-size: 15px;
+    margin-left:4px;
+  }
+  .surfing .mid a{
+    width:56.4px;
+  }
+  /* -------------------------------- Responsive learn menu -------------------- */
+
+  /* -------------------------------- Responsive Search menu -------------------- */
+  header .right #frmSearch #txtSearch {
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    margin-top: 120px;
+    margin-left: -650px;
+  }
+  header{
+    height: 200px;
+    width: 800px;
+  }
+  /* -------------------------------- Responsive Search menu -------------------- */
+  
+/* -------------------------------- Responsive Vertical menu -------------------- */
+  .vertical-menu{
+    margin-top: 30px;
+    margin-left: 150px;
+  
+  }
+  .vertical-menu a{
+    flex-direction: row;
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .vertical-menu a:hover{
+    background-color: lawngreen;
+  }
+
+/* -------------------------------- Responsive Vertical menu -------------------- */
+
+/* -------------------------------- Responsive left image menu -------------------- */
+.left img{
+  margin-left: 235px;
+}
+/* -------------------------------- Responsive center menu -------------------- */
+.center a{
+  margin-top: 65px;
+}
+
+/* -------------------------------- Responsive center menu -------------------- */
+
+/* -------------------------------- Responsive animation menu -------------------- */
+.im img{
+  margin-left: 250px;
+}
+.im h1{
+  margin-left: -150px;
+}
+  /* -------------------------------- Responsive animation menu -------------------- */
+/*     .top {
+    margin-left: 500px;
+    width: 80px;
+        hight:auto;
+    float: right;
+    margin-right: -20px; */
+/*   } */
+  body{
+   
+    overflow-x: hidden;
+  }
+/*   .footer{
+    width: 300px;
+
+  } */
+  }
+}
+/* ----------------------- Responsive style ------------------- */
+  
+
